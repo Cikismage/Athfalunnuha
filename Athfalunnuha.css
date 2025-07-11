@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -162,21 +166,39 @@ p {
   text-align: center;
 }
 
+/* Container untuk memusatkan tombol */
+.daftar-container {
+  display: flex;
+  justify-content: center; /* Tombol akan berada di tengah secara horizontal */
+  padding: 0 50px; /* Menyamakan dengan margin paragraf di atasnya */
+}
+
 .daftar {
   background-color: #f5f1f8;
-  padding: 1rem; /* Kurangi padding kartu */
-  border-radius: 10px; /* Sedikit kurangi border-radius */
-  box-shadow: 0 2px 5px rgba(90, 40, 125, 0.1); /* Kurangi shadow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Sesuaikan transisi */
-  width: 80px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(90, 40, 125, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100px; /* Beri sedikit ruang tambahan */
   height: 30px;
   text-align: center;
-  margin-left: 550px;
+  display: flex; /* Menggunakan flexbox untuk memusatkan link di dalamnya */
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Hapus margin-left yang bermasalah */
 }
 
 .daftar:hover {
-  transform: translateY(-4px); /* Kurangi efek hover */
-  box-shadow: 0 4px 8px rgba(90, 40, 125, 0.15); /* Kurangi shadow hover */
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(90, 40, 125, 0.15);
+}
+
+/* Pastikan link di dalam tombol daftar tidak memiliki margin yang tidak perlu */
+.daftar a {
+  margin: 0;
+  font-size: 1.2rem; /* Sesuaikan ukuran font jika perlu */
+  font-weight: 600;
+  color: #5a287d;
 }
 
 .program-card {
