@@ -1,0 +1,239 @@
+/* Universal Styles (from previous Athfalunnuha.css) */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+li {
+  font-family: 'poppins', sans-serif;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 1rem auto; /* Ini yang mengatur jarak dari tepi dengan menengahkan kontainer */
+  padding: 0 1.5rem; /* Padding internal agar konten tidak menempel ke batas kontainer */
+}
+
+a {
+  text-decoration: none;
+  color: white; /* Default link color for header navigation */
+  transition: color 0.3s ease; /* Smooth transition for links */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Link color for links outside header (e.g., in main content or footer) */
+main a { /* Added 'main' to specify links within the main content area */
+  color: #5a287d; /* Athfalunnuha purple for content links */
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: #7d3ca8; /* Slightly darker purple on hover */
+}
+
+/* Header Styles */
+header {
+  background-color: #5a287d; /* Athfalunnuha purple */
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1.5rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+nav a {
+  margin-left: 1.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #d4edda; /* Lighter green on hover/active, keep consistent with Athfalunnuha.html */
+}
+
+nav .active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* Main Content Section Styles (for specific program details) */
+/* This section will mimic the 'section' styles from Athfalunnuha.css */
+section.program { /* Targeting specifically the section with class "program" */
+  padding: 40px 60px; /* Consistent padding with previous section style */
+  background-color: #fff;
+  margin-top: 20px; /* Add some margin from the header */
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  max-width: 1200px; /* Limit width to align with container */
+  margin-left: auto; /* Center the section */
+  margin-right: auto; /* Center the section */
+}
+
+section.program h3 {
+  text-align: center; /* Center the program title */
+  color: #5a287d; /* Athfalunnuha purple */
+  font-size: 2em; /* Make the heading prominent */
+  margin-bottom: 20px;
+}
+
+section.program p {
+  text-align: justify; /* Justify text for better readability */
+  line-height: 1.8; /* Increase line height for readability */
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+/* Untuk mengubah font semua list item dalam bagian program */
+.program li {
+  font-size: 1.05em; /* Contoh: Ukuran font sedikit lebih besar dari default */
+  line-height: 1.6; /* Menjaga keterbacaan */
+  color: #444; /* Warna teks sedikit lebih gelap */
+  margin-bottom: 8px; /* Memberi sedikit jarak antar item list */
+}
+
+/* Jika Anda ingin lebih spesifik menargetkan <ul> dalam program */
+.program ul li {
+  text-align: justify; /* Justify text for better readability */
+  line-height: 1.8; /* Increase line height for readability */
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Footer Styles (assuming you might add one to this page too) */
+footer {
+  background-color: #5a287d;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer img {
+  height: 20px;
+  width: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* MEDIA QUERIES (Consistent with previous Athfalunnuha.css) */
+@media (max-width: 992px) {
+  .header-container {
+    padding: 0 1rem;
+  }
+
+  nav a {
+    margin-left: 1rem;
+  }
+
+  section.program {
+    padding: 40px 40px; /* Slightly reduce padding for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 0.5rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  section.program {
+    padding: 30px 20px; /* Reduce padding for tablets */
+  }
+
+  section.program h3 {
+    font-size: 1.8em;
+  }
+
+  section.program p {
+    font-size: 1em;
+  }
+
+  footer {
+    padding: 1.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    margin: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  section.program {
+    padding: 20px 15px; /* Further reduce padding for small phones */
+  }
+
+  section.program h3 {
+    font-size: 1.5em;
+  }
+}

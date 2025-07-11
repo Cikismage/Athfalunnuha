@@ -1,0 +1,27 @@
+.contact p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  margin-left: 20px; /* Indent contact details */
+}
+
+.contact p img {
+  height: 24px; /* Small icon size for contact */
+  width: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.contact p a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact p a:hover {
+  color: #0056b3;
+}
+
+
+
